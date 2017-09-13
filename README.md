@@ -33,6 +33,11 @@ Valgring
 * Valgrind Valgrind is an instrumentation framework for building dynamic analysis tools. There are Valgrind tools that can automatically detect many memory management and threading bugs, and profile your programs in detail. You can also use Valgrind to build new tools.
 * http://valgrind.org/
 
+scan-build
+----------
+* scan-build is a command line utility that enables a user to run the static analyzer over their codebase as part of performing a regular build (from the command line).
+* http://clang-analyzer.llvm.org/scan-build.html
+
 Understanding glibc malloc
 ==========================
 https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/
