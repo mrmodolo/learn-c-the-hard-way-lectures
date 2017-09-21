@@ -1,0 +1,15 @@
+# Nao usar -fsanitize=address com valgrind!
+# CFLAGS=-Wall -g -O0 -fsanitize=address -fno-omit-frame-pointer
+
+FILES_TO_REMOVE=$(shell find /home/modolo/Desenvolvimento/c/learn-c-the-hard-way -executable -type f -exec basename {} \;)
+
+CFLAGS=-Wall -g -O0 -fno-omit-frame-pointer
+
+CC=clang
+
+clean:
+ifneq ($(strip $(FILES_TO_REMOVE)),) 
+	@echo "Removendo $(FILES_TO_REMOVE)!"
+	@find /home/modolo/Desenvolvimento/c/learn-c-the-hard-way -executable -type f -exec rm -f "{}" \;
+endif
+
