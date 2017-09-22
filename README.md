@@ -41,3 +41,7 @@ scan-build
 Understanding glibc malloc
 ==========================
 https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/
+
+C Standard Library header files
+===============================
+http://en.cppreference.com/w/c/header
